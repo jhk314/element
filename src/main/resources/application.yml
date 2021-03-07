@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /elem
+spring:
+  application:
+    name: elem
+  profiles:
+    active: uat
+
+  thymeleaf:
+    prefix: classpath:/page/
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+    content-type: text/html
+    cache: false

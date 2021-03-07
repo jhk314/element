@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://rm-wz9n64hq437693t2y7o.mysql.rds.aliyuncs.com:3306/elem?useUnicode=true&characterEncoding=utf8&autoReconnect=true
+    username: dbadmin
+    password: 301415926Jhk
