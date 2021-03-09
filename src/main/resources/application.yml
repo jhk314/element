@@ -1,20 +1,24 @@
 server:
   port: 8080
   servlet:
-    context-path: /elem
+    context-path: /
 spring:
   application:
-    name: elem
+    name: element
   profiles:
     active: uat
 
   thymeleaf:
     prefix: classpath:/page/
     suffix: .html
-    mode: HTML5
+    mode: HTML
     encoding: UTF-8
     content-type: text/html
     cache: false
   web:
     resources:
       static-locations: classpath:/static/
+  webflux:
+    static-path-pattern: classpath:/static/
+  mvc:
+    static-path-pattern: classpath:/static/
