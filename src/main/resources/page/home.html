@@ -13,7 +13,7 @@
 <body style='background-color: #303133;'>
 <div id='app' style='height: 100%;width: 100%;'>
     <div id='top'
-         style="background-color: #000000;margin-left: -20%;margin-right: -20%;margin-top: -5%;padding-top: 5%;padding-bottom: 10px;">
+         style='background-image:url(../static/image/yourname.jpg);background-repeat: no-repeat;background-position: 50% 50%;margin-left: -20%;margin-right: -20%;margin-top: -5%;padding-top: 5%;padding-bottom: 10px;'>
         <h2 style='text-align: center;color: #82848a;'>青璞</h2>
     </div>
     <div id='content' style='height:100%;width: 100%;'>
@@ -34,9 +34,11 @@
                             </template>
                             <el-menu-item-group>
                                 <template slot='title'>游戏</template>
-                                <el-menu-item index='1-1'><a href="game/word" target="frame">打字游戏</a>
+                                <el-menu-item index='1-1'>
+                                    <el-link href='/game/word' target='frame'>打字游戏</el-link>
                                 </el-menu-item>
-                                <el-menu-item index='1-2'><a href="http://www.baidu.com" target="frame">龟兔赛跑</a>
+                                <el-menu-item index='1-2'>
+                                    <el-link href='/game/run' target='frame'>龟兔赛跑</el-link>
                                 </el-menu-item>
                             </el-menu-item-group>
                         </el-submenu>
@@ -45,8 +47,8 @@
             </el-row>
         </div>
         <div style='float:left;display:inline;width: 85%;'>
-            <iframe src="about:blank" style="width: 100%;height: 100%;border-width: 0px;" scrolling="no"
-                    name="frame"></iframe>
+            <iframe src='about:blank' style='width: 100%;height: 100%;border-width: 0px;' scrolling='no'
+                    name='frame'></iframe>
         </div>
     </div>
 </div>

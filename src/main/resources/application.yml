@@ -17,8 +17,8 @@ spring:
     cache: false
   web:
     resources:
-      static-locations: classpath:/static/
+      static-locations: classpath:/static/**
   webflux:
-    static-path-pattern: classpath:/static/
+    static-path-pattern: classpath:/static/**
   mvc:
-    static-path-pattern: classpath:/static/
+    static-path-pattern: classpath:/static/**

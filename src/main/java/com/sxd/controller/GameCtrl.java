@@ -11,11 +11,11 @@ public class GameCtrl {
 
     @RequestMapping(value = "/word", method = RequestMethod.GET)
     public String word() {
-        return "word_game";
+        return "game/word_game";
     }
 
     @RequestMapping(value = "/run", method = RequestMethod.GET)
     public String run() {
-        return "run_game";
+        return "game/run_game";
     }
 }
